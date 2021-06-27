@@ -1,0 +1,15 @@
+{% with %}
+  {% set page = "donate" %}
+  {% set title = "Buy me a coffee" %}
+  {% include "header.j2" %}
+{% endwith %}
+
+If for whatever reason you want to send me some money, you can do so with
+Monero.
+
+<div class="donate">
+<code>484fapQDhYq6WKAqSk3uDyF7isYUU7PNY2DPSkS6ZPNCcWyHrjCBXcKXHdCVjnBHVpLYQffJjnMgh423ZsG3QmGwQuRvPRL</code>
+<img src="{{ "BASE_URL" | env }}/monero_receive.png" alt="484fapQDhYq6WKAqSk3uDyF7isYUU7PNY2DPSkS6ZPNCcWyHrjCBXcKXHdCVjnBHVpLYQffJjnMgh423ZsG3QmGwQuRvPRL">
+</div>
+
+{% include "footer.j2" %}

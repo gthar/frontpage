@@ -14,3 +14,7 @@ nav:
     - name: contact
       icon: mail
       endpoint: contact
+
+    - name: buy me a coffee
+      icon: dollar-sign
+      endpoint: donate
