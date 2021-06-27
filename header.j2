@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+  {% include "style.css" %}
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>
+      {% if page is defined %}{{ page }} | {% endif %}Ricard Illa's page</title>
+</head>
+<body>
+<nav id="nav" class="nav justify-content-center">
+    {% for x in nav %}
+        <a
+            class="nav-link"
+            href="{% if x.url is defined %}{{ x.url }}{% else %}{{ "BASE_URL" | env }}/{{ x.endpoint }}{% endif %}"
+        >
+            {% include "icons/" + x.icon + ".svg" %}{{ x.name }}
+        </a>
+    {% endfor %}
+</nav>
+
+<main id="main">
+<div class="header"{% if headerid is defined %} id="{{ headerid }}"{% endif %}>
+<h1>{{ title }}</h1>{% if side is defined %}{{ side }}{% endif %}
+{% if subtitle is defined %}<h2>{{ subtitle }}</h2>{% endif %}
+</div>
+<hr>
+<div class="container">

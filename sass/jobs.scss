@@ -1,0 +1,28 @@
+.job {
+    padding: 5px;
+
+    dt .date {
+        display: none;
+    }
+
+    dd {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: smaller;
+            margin-bottom: 0px;
+            li {
+                padding-bottom: 2px;
+            }
+        }
+        .date {
+            font-size: smaller;
+            color: $light4;
+            font-style: italic;
+        }
+    }
+}
+
+.flex-jobs {
+    justify-content: center;
+}

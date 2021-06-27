@@ -1,0 +1,16 @@
+nav:
+    - name: about
+      icon: info
+      endpoint: ""
+
+    - name: CV
+      icon: file-text
+      endpoint: cv
+
+    - name: code
+      icon: code
+      url: https://git.monotremata.xyz
+
+    - name: contact
+      icon: mail
+      endpoint: contact

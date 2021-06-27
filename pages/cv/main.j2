@@ -1,0 +1,21 @@
+{% with %}
+  {% set page = "CV" %}
+  {% set title = "CV" %}
+  {% set side = '<a href="' + ("BASE_URL" | env) + '/cv_ricardilla.pdf">pdf version</a>' %}
+  {% include "header.j2" %}
+{% endwith %}
+
+I'm a tinkerer, a <em>data-oriented</em> programmer with a bias towards
+<em>functional programming</em>. I'm a fan of <em>clean code</em> and
+<em>correctness</em>, as well as <em>minimalism</em>. I enjoy
+<em>modern</em> (but not bloated) technologies and I like playing with
+new things.
+
+<hr>
+{% include "pages/cv/experience.j2" %}
+<hr>
+{% include "pages/cv/education.j2" %}
+<hr>
+{% include "pages/cv/research.j2" %}
+
+{% include "footer.j2" %}

@@ -1,0 +1,28 @@
+{% with %}
+  {% set headerid = "home-jumbotron" %}
+  {% set title = "Ricard Illa's page" %}
+  {% set subtitle = "My shamelessly self-referential page about me and myself" %}
+  {% include "header.j2" %}
+{% endwith %}
+
+<p>I am yet another random nerd on the internet. I am a
+computer nerd, a music nerd, a fermentation nerd and a beer
+nerd. I have an unhealthy tendency to dive down too many
+rabbit holes.</p>
+<p>Despite my original background being on biochemistry and
+bioinformatics, I am currently employed as a data
+engineer/backend developer.</p>
+<p>I am a free/libre and open source advocate and a DIY
+obsessive. I highly value technological sovereignty and
+personal privacy.</p>
+<p>I am a fan of music in general and of weird heavy shit
+in particular.</p>
+<p>I feel the most comfortable within *nix systems and find
+functional programming the most enjoyable.</p>
+<p><a href="../preferences">Here</a>’s a list of random
+trivial preferences of mine.</p>
+
+{% with %}
+  {% set note = "obvious disclaimer: any opinions expressed here are solely my own" %}
+  {% include "footer.j2" %}
+{% endwith %}

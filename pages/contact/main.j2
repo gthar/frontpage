@@ -1,0 +1,19 @@
+{% with %}
+  {% set page = "contact" %}
+  {% set title = "Contact" %}
+  {% include "header.j2" %}
+{% endwith %}
+
+<dl class="contacts">
+  <dt>e-mail</dt>
+  <dd><a href="mailto:rilla@monotremata.xyz">rilla@monotremata.xyz</a></dd>
+  <dt>GPG public key</dt>
+  <dd><a href="{{ "BASE_URL" | env }}/0x8333CFB0B9D3244D.pub">B51D4548A4846E3C8D115C808333CFB0B9D3244D</a></dd>
+  <dt>matrix</dt><dd><a href="https://matrix.to/#/@rilla:monotremata.xyz">@rilla:monotremata.xyz</a></dd>
+  <dt>xmpp</dt>
+  <dd><a href="xmpp:rilla@monotremata.xyz?message">rilla@monotremata.xyz</a></dd>
+  <dt>fediverse</dt>
+  <dd><a href="https://pleroma.monotremata.xyz/users/rilla/">@rilla@pleroma.monotremata.xyz</a></dd>
+</dl>
+
+{% include "footer.j2" %}

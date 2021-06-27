@@ -1,0 +1,128 @@
+body {
+    background-color: $dark0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: $fg1;
+    font-size: 16px;
+}
+
+main {
+    margin: 10px auto;
+    max-width: 80%;
+    .container {
+        margin: auto;
+        max-width: 95%;
+        line-height: 1.8;
+        padding: 10px;
+    }
+}
+
+
+h1, h2 {
+    font-weight: normal;
+    margin: 5px;
+}
+
+em {
+    color: $primary;
+}
+
+strong {
+    color: $secondary;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home-jumbotron {
+    background-color: $dark1;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0px;
+
+    display: block;
+
+    h2 {
+        font-size: 125%;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: $dark1;
+}
+
+a {
+    color: $secondary;
+    text-decoration: underline;
+    &:hover {
+        color: $secondary-light;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px;
+    border-bottom-color: $gray;
+    border-bottom-style: solid;
+    width: 85%;
+    margin: auto;
+
+    a {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        padding-top: 0px;
+        color: $fg1;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.note {
+  font-style: italic;
+  color: $light4;
+  font-size: smaller;
+}
+
+dl {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: auto auto;
+    margin: 10px;
+
+    dt {
+        padding: 3px 10px;
+        font-weight: normal;
+        text-align: right;
+        color: $light4;
+        font-size: smaller;
+        border-right: 1px solid $gray;
+    }
+
+    dd {
+        padding: 3px 10px;
+        margin-left: 0px;
+    }
+}
+
+code {
+    color: $bright_purple;
+}

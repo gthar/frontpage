@@ -1,0 +1,52 @@
+{% with %}
+  {% set page = "my preferences" %}
+  {% set title = "My preferences" %}
+  {% include "header.j2" %}
+{% endwith %}
+
+<p>
+These are some trivial preferences of mine that may or may not be polemic.
+</p>
+<p>
+My preferred text editor is VIM (actually, I use neovim). At some point, I'd be
+willing to try Emacs, but right now I don't have enough time to properly learn
+and customize it. I'm probably already way too invested in VIM.
+</p>
+<p>
+I like Megadeth more than Metallica. I like Genesis's Peter Gabriel era more
+than the Phil Collins era. Dio was a much better singer than Ozzy, but I like
+the riffs and songs from the Ozzy era more. I prefer Mike Portnoy over Mike
+Mangini. I like Syd Barret and David Gilmour equally, but for different
+reasons.
+</p>
+<p>
+The two sounds the bring me the most joy are heavy guitars with fuzz and
+mellotrons.
+</p>
+<p>
+My favorite beer styles are Imperial Stouts, Barleywines and Scotch ales. I
+rarely drink IPAs outside of summer.
+</p>
+<p>
+I prefer functional programming over object-oriented programming. Out of all
+the programming languages I've tried, Haskell and Clojure are the ones that
+I've liked the most. Click <a href="{{ "BASE_URL" | env }}/preferences">here</a>
+to read my opinion on recursion.
+</p>
+<p>Xmonad is my favorite window manager. I like the
+<a href="https://github.com/morhetz/gruvbox">gruvbox</a> color scheme and the
+Inconsolata font.
+</p>
+<p>
+I use GNU/Linux as a daily driver. Mostly, because it's the most viable FLOSS
+desktop operating system. I may try some of the BSDs (OpenBSD being
+particularly attractive) at some point. I don't consider other free OSs (like
+Haiku, FreeDOS, ReactOS, Redox, TempleOS...) viable daily driver options for
+me, but playing with them in VMs is still fun. I don't consider non-free OSs as
+options (unless I'm forced to use them by my employer).
+</p>
+<p>
+Btw, I use arch.
+</p>
+
+{% include "footer.j2" %}
