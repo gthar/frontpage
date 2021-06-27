@@ -16,5 +16,5 @@ nav:
       endpoint: contact
 
     - name: buy me a coffee
-      icon: dollar-sign
+      icon: coffee
       endpoint: donate
