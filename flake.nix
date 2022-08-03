@@ -15,6 +15,7 @@
             pkgs.sassc
             pkgs.j2cli
             pkgs.html-tidy
+            pkgs.rsync
           ];
         };
       });
