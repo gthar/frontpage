@@ -3,9 +3,9 @@ nav:
       icon: info
       endpoint: ""
 
-    - name: CV
+    - name: resume
       icon: file-text
-      endpoint: cv
+      endpoint: resume
 
     - name: code
       icon: code

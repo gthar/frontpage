@@ -1,7 +1,7 @@
 {% with %}
-  {% set page = "CV" %}
-  {% set title = "CV" %}
-  {% set side = '<a href="' + ("BASE_URL" | env) + '/cv_ricardilla.pdf">pdf version</a>' %}
+  {% set page = "resume" %}
+  {% set title = "resume" %}
+  {% set side = '<a href="' + ("BASE_URL" | env) + '/resume_ricardilla.pdf">pdf version</a>' %}
   {% include "header.j2" %}
 {% endwith %}
 
@@ -12,10 +12,10 @@ I'm a tinkerer, a <em>data-oriented</em> programmer with a bias towards
 new things.
 
 <hr>
-{% include "pages/cv/experience.j2" %}
+{% include "pages/resume/experience.j2" %}
 <hr>
-{% include "pages/cv/education.j2" %}
+{% include "pages/resume/education.j2" %}
 <hr>
-{% include "pages/cv/research.j2" %}
+{% include "pages/resume/research.j2" %}
 
 {% include "footer.j2" %}
