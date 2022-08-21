@@ -8,7 +8,7 @@ pipeline:
       - make onion
 
   publish:
-    image: drillster/drone-rsync
+    image: registry.monotremata.xyz/rsync
     settings:
       host: caladan
       user: woodpecker
