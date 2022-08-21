@@ -1,0 +1,9 @@
+pipeline:
+  www:
+    image: registry.monotremata.xyz/static-page-builder
+    commands:
+      - make www
+  onion:
+    image: registry.monotremata.xyz/static-page-builder
+    commands:
+      - make onion
