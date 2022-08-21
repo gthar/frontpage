@@ -1,3 +1,5 @@
+platform: linux/arm64
+
 pipeline:
   www:
     image: registry.monotremata.xyz/static-page-builder
