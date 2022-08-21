@@ -1,7 +1,7 @@
 platform: linux/arm64
 
 pipeline:
-  www:
+  build:
     image: registry.monotremata.xyz/static-page-builder
     commands:
       - make www
