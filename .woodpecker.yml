@@ -6,3 +6,15 @@ pipeline:
     commands:
       - make www
       - make onion
+
+  publish:
+    image: drillster/drone-rsync
+    settings:
+      hosts: ["caladan"]
+      user: woodpecker
+      key:
+        from_secret: ssh_key
+      source: ./html/*
+      target: /srv/sites/frontpage
+      recursive: true
+      delete: true
