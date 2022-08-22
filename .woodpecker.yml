@@ -18,6 +18,6 @@ pipeline:
         from_secret: ssh_key
       known_hosts:
         from_secret: known_hosts
-      source: html
+      sources: ["html/www", "html/onion"]
       target: /srv/sites/frontpage
       args: --recursive --human-readable --verbose --delete
