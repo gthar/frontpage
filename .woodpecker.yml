@@ -14,6 +14,8 @@ pipeline:
       user: woodpecker
       key:
         from_secret: ssh_key
+      known_hosts:
+        from_secret: known_hosts
       source: html/*
       target: /srv/sites/frontpage
       args: --recursive --human-readable --verbose --delete
