@@ -16,4 +16,4 @@ pipeline:
         from_secret: ssh_key
       source: html/*
       target: /srv/sites/frontpage
-      args: --recursive --human-readable --delete
+      args: --recursive --human-readable --verbose --delete
