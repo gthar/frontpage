@@ -3,12 +3,14 @@ platform: linux/arm64
 pipeline:
   build:
     image: registry.monotremata.xyz/static-page-builder
+    pull: true
     commands:
       - make www
       - make onion
 
   publish:
     image: registry.monotremata.xyz/rsync
+    pull: true
     settings:
       host: caladan
       user: woodpecker
