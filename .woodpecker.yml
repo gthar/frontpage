@@ -1,6 +1,13 @@
 platform: linux/arm64
 
 pipeline:
+
+  gitleaks:
+    image: zricethezav/gitleaks
+    pull: true
+    commands:
+      - gitleaks --source . --verbose --redact detect
+
   build:
     image: registry.monotremata.xyz/static-page-builder
     pull: true
