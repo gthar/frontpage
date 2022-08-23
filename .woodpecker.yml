@@ -3,7 +3,7 @@ platform: linux/arm64
 pipeline:
 
   gitleaks:
-    image: zricethezav/gitleaks
+    image: registry.monotremata.xyz/gitleaks
     pull: true
     commands:
       - gitleaks --source . --verbose --redact detect
