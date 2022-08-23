@@ -21,3 +21,13 @@ pipeline:
       sources: ["html/www", "html/onion"]
       target: /srv/sites/frontpage
       args: --recursive --human-readable --verbose --delete
+
+  notify:
+    image: registry.monotremata.xyz/sendxmpp
+    pull: true
+    settings:
+      message: "frontpage built and deployed successfully"
+      username: "woodpecker@monotremata.xyz"
+      password:
+        from_secret: xmpp_password
+      recipient: "rilla@monotremata.xyz"
