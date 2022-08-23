@@ -23,11 +23,12 @@ pipeline:
       args: --recursive --human-readable --verbose --delete
 
   notify:
-    image: registry.monotremata.xyz/sendxmpp
+    image: registry.monotremata.xyz/xmpp-ci
     pull: true
     settings:
-      message: "frontpage built and deployed successfully"
       username: "woodpecker@monotremata.xyz"
+      recipient: "rilla@monotremata.xyz"
       password:
         from_secret: xmpp_password
-      recipient: "rilla@monotremata.xyz"
+    when:
+      status: [success, failure]
