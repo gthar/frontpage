@@ -18,6 +18,12 @@ My site is simple enough that using a proper static site generator would have
 been overkill, but I still wanted something easier to maintain than directly
 writing HTML by hand. So a templating system like Jinja2 is a nice compromise.
 
+## Icons
+
+I'm using the [feather icons](https://feathericons.com/) for the website
+navigation bar. The repo with the icons is cloned as sub-module and the needed
+SVGs are embedded into the HTML when the website is built.
+
 ## Build dependencies
 
 There's a zero chance than anyone other than me would want to build this, and

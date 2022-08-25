@@ -16,7 +16,7 @@
             class="nav-link"
             href="{% if x.url is defined %}{{ x.url }}{% else %}{{ "BASE_URL" | env }}/{{ x.endpoint }}{% endif %}"
         >
-            {% include "icons/" + x.icon + ".svg" %}{{ x.name }}
+            {% include  icon_path + "/" + x.icon + ".svg" %}{{ x.name }}
         </a>
     {% endfor %}
 </nav>

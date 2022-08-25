@@ -18,3 +18,5 @@ nav:
     - name: buy me a coffee
       icon: coffee
       endpoint: donate
+
+icon_path: icons/feather/icons

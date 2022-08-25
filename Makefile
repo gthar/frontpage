@@ -2,7 +2,7 @@ BASE_URL_WWW ?= https://monotremata.xyz
 BASE_URL_ONION ?= http://zswm576cm7wgmgcwluy4l4ixkfasj25taqbn2r5pnrrj552l263ff2qd.onion
 
 SASS_FILES=$(shell find sass -name \*.scss)
-ICON_FILES=$(shell find icons -name \*.svg)
+FEATHER_ICONS=$(shell find icons/feather/icons -name \*.svg)
 PAGES=$(shell find pages -maxdepth 1 -mindepth 1 -type d -printf "%f\n")
 ASSETS=$(shell find assets -mindepth 1)
 
@@ -45,7 +45,7 @@ define tidy_html
 	tidy --show-info no -output $@ $<
 endef
 
-page_deps = pages/%/*.j2 config.yaml header.j2 footer.j2 style.css $(ICON_FILES)
+page_deps = pages/%/*.j2 config.yaml header.j2 footer.j2 style.css $(FEATHER_ICONS)
 
 untidy_www_%.html: $(page_deps)
 	$(call build_html,$(BASE_URL_WWW))
