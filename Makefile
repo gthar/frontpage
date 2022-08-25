@@ -32,26 +32,26 @@ style.css: $(SASS_FILES)
 	sassc sass/main.scss style.css
 
 define build_html
-	BASE_URL=$(1) j2 -f yaml -o $@ pages/$*/main.j2 config.yaml
+	j2 -f yaml -o $@ pages/$*/main.j2 config.yaml
 endef
 
 define cp_asset
-	@mkdir -p $$(dirname $@)
+	@mkdir -p $(@D)
 	cp $? $@
 endef
 
 define tidy_html
-	@mkdir -p $$(dirname $@)
+	@mkdir -p $(@D)
 	tidy --show-info no -output $@ $<
 endef
 
 page_deps = pages/%/*.j2 config.yaml header.j2 footer.j2 style.css $(FEATHER_ICONS)
 
 untidy_www_%.html: $(page_deps)
-	$(call build_html,$(BASE_URL_WWW))
+	BASE_URL=$(BASE_URL_WWW) $(build_html)
 
 untidy_onion_%.html: $(page_deps)
-	$(call build_html,$(BASE_URL_ONION))
+	BASE_URL=$(BASE_URL_ONION) $(build_html)
 
 html/www/%.html: untidy_www_%.html
 	$(tidy_html)
