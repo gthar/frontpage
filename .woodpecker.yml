@@ -23,6 +23,8 @@ pipeline:
       user: woodpecker
       key:
         from_secret: ssh_key
+      key_cert:
+        from_secret: ssh_key_cert
       known_hosts:
         from_secret: known_hosts
       sources: ["html/www", "html/onion"]
